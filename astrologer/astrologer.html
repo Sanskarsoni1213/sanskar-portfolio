@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Astrology Predictions</title>
+    <link rel="stylesheet" href="astrologer.css">
+</head>
+<body>
+    <header>
+        <h1>Astrology Predictions</h1>
+        <p>Discover your future with the power of astrology!</p>
+    </header>
+    
+    <div class="form-container">
+        <h2>Enter Your Birth Details</h2>
+        <form id="birthDetailsForm">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            
+            <label for="time">Time of Birth:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="place">Place of Birth (City):</label>
+            <input type="text" id="place" name="place" placeholder="City Name" required>
+            
+            <button type="submit">Get Prediction</button>
+        </form>
+    </div>
+
+    <div id="prediction" class="prediction">
+        <h2>Your Astrological Prediction</h2>
+        <p id="predictionText">Enter your details to see your prediction!</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Astrology Predictions. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
