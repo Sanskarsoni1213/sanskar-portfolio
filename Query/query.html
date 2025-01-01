@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation</title>
+    <style>
+        /* Apply a gradient background with smooth transition */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #6D83F2, #4C3D9A);
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* Message container with a modern minimalistic card design */
+        .message-container {
+            text-align: center;
+            padding: 40px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 500px;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        /* Keyframes for smooth fade-in animation */
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Style the heading */
+        h1 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        h1:hover {
+            color: #6D83F2;  /* Hover effect for title */
+        }
+
+        /* Message paragraph with modern typography */
+        p {
+            font-size: 18px;
+            color: #777;
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+
+        /* Highlight thank you message with a bold, vibrant color */
+        .thank-you {
+            font-size: 20px;
+            color: #4C3D9A;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+
+        /* Modern minimal button style */
+        .back-button {
+            margin-top: 30px;
+            padding: 12px 30px;
+            background-color: #6D83F2;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Hover effect for button */
+        .back-button:hover {
+            background-color: #4C3D9A;
+            transform: translateY(-4px);
+        }
+
+        /* Button focus effect */
+        .back-button:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="message-container">
+        <h1>YOUR MESSAGE HAS BEEN SENT</h1>
+        <p>Thank you for visiting!</p>
+        <p class="thank-you">We appreciate your feedback!</p>
+        <!-- Link to go back to the parent folder (portfolio/index.html) -->
+        <a href="../index.html">
+            <button class="back-button">Back to Home</button>
+        </a>
+    </div>
+</body>
+</html>
